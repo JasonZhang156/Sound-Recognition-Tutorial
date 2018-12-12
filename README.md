@@ -1,5 +1,5 @@
-# Sound-Recognition-Tutorial
-A simple sound recognition tutorial, including data analysis, feature extraction, model training, test and so on. 
+## Sound-Recognition-Tutorial
+A simple sound recognition tutorial, including data analysis, feature extraction, model building, model train and model test ... 
 
 一个简单的声音识别教程，让大家初步了解一下声音识别的整个过程和中间需要用到的方法。该教程共包含以下几个部分，每个部分都有对应的blog介绍：
 
