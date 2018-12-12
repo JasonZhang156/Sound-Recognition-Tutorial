@@ -13,6 +13,7 @@ from glob import glob
 
 
 def data_stat():
+    """data statistic"""
     audio_path = './data/esc10/audio/'
     class_list = [os.path.basename(i) for i in glob(audio_path + '*')]
     nums_each_class = [len(glob(audio_path + cl + '/*.ogg')) for cl in class_list]
@@ -33,6 +34,7 @@ def data_stat():
 
 
 def plot_wave(sound_files, sound_names):
+    """plot wave"""
     i = 1
     fig = plt.figure(figsize=(20, 64))
     for f, n in zip(sound_files, sound_names):
@@ -48,6 +50,7 @@ def plot_wave(sound_files, sound_names):
 
 
 def plot_spectrum(sound_files, sound_names):
+    """plot log power spectrum"""
     i = 1
     fig = plt.figure(figsize=(20, 64))
     for f, n in zip(sound_files, sound_names):
