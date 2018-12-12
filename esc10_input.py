@@ -8,6 +8,7 @@ import numpy as np
 
 RANDOM_SEED = 20181212
 
+
 def dense_to_one_hot(labels_dense, num_classes):
     """Convert class labels from scalars to one-hot vectors."""
     num_labels = labels_dense.shape[0]
@@ -18,6 +19,7 @@ def dense_to_one_hot(labels_dense, num_classes):
 
 
 def get_data(test_fold, feat):
+    """load feature for train and test"""
     # load feature
     data = np.load('./data/esc10/feature/esc10_{}_fold{}.npz'.format(feat, test_fold))
     train_x = np.expand_dims(data['train_x'], axis=-1)
