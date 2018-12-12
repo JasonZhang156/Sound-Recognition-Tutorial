@@ -70,13 +70,13 @@ def CNN_train(test_fold, feat):
 
 
 if __name__ == '__main__':
-    use_gpu()  #使用GPU
-    dict_acc = {}
+    use_gpu()  # 使用GPU
+    dict_acc = {}  # results of each fold
     # 5-fold cross validation
     print('### [Start] Test model for ESC10 dataset #####')
     for fold in [1, 2, 3, 4, 5]:
         print("## Start test fold{} model #####".format(fold))
-        acc = CNN_train(fold, 'logmel')
+        acc = CNN_train(fold, 'mfcc')
         dict_acc['fold{}'.format(fold)] = acc
         print("## Finish test fold{} model #####".format(fold))
     dict_acc['mean'] = np.mean(list(dict_acc.values()))
