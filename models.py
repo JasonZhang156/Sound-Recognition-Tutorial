@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+@author: Jason Zhang
+@github: https://github.com/JasonZhang156/Sound-Recognition-Tutorial
+"""
+
 from keras.layers import Input
 from keras.layers import Conv2D, MaxPool2D, Dense, Flatten, Dropout, BatchNormalization, Activation, GlobalAvgPool2D
 from keras.models import Model

@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+@author: Jason Zhang
+@github: https://github.com/JasonZhang156/Sound-Recognition-Tutorial
+"""
+
 from keras.models import load_model
 import tensorflow as tf
 import esc10_input

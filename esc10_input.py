@@ -1,7 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+@author: Jason Zhang
+@github: https://github.com/JasonZhang156/Sound-Recognition-Tutorial
+"""
+
 import numpy as np
 
 RANDOM_SEED = 20181212
-
 
 def dense_to_one_hot(labels_dense, num_classes):
     """Convert class labels from scalars to one-hot vectors."""

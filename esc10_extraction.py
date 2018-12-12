@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+@author: Jason Zhang
+@github: https://github.com/JasonZhang156/Sound-Recognition-Tutorial
+"""
+
 import numpy as np
 from glob import glob
 import os

@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+@author: Jason Zhang
+@github: https://github.com/JasonZhang156/Sound-Recognition-Tutorial
+"""
+
 import os
 import numpy as np
 import librosa

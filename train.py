@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+@author: Jason Zhang
+@github: https://github.com/JasonZhang156/Sound-Recognition-Tutorial
+"""
+
 from keras.callbacks import TensorBoard, ModelCheckpoint, LearningRateScheduler
 import tensorflow as tf
 import keras.backend as K
