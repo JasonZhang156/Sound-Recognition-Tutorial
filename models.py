@@ -5,7 +5,7 @@
 """
 
 from keras.layers import Input
-from keras.layers import Conv2D, MaxPool2D, Dense, Flatten, Dropout, BatchNormalization, Activation, GlobalAvgPool2D
+from keras.layers import Conv2D, MaxPool2D, Dense, Dropout, BatchNormalization, Activation, GlobalAvgPool2D
 from keras.models import Model
 from keras import optimizers
 from keras.utils import plot_model
@@ -20,24 +20,30 @@ def CNN(input_shape=(60,65,1), nclass=10):
     """
     input_ = Input(shape=input_shape)
 
+    # Conv1
     x = Conv2D(64, kernel_size=(3, 3), strides=(1, 1), padding='same')(input_)
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
     x = MaxPool2D(pool_size=(2, 2), strides=(2, 2))(x)
 
+    # Conv2
     x = Conv2D(128, kernel_size=(3, 3), strides=(1, 1), padding='same')(x)
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
     x = MaxPool2D(pool_size=(2, 2), strides=(2, 2))(x)
 
+    # Conv3
     x = Conv2D(256, kernel_size=(3, 3), strides=(1, 1), padding='same')(x)
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
     x = MaxPool2D(pool_size=(2, 2), strides=(2, 2))(x)
 
+    # GAP
     x = GlobalAvgPool2D()(x)
+    # Dense_1
     x = Dense(256, activation='relu')(x)
     x = Dropout(0.5)(x)
+    # Dense_2
     output_ = Dense(nclass, activation='softmax')(x)
 
     model = Model(inputs=input_, outputs=output_)
