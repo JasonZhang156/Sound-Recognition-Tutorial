@@ -16,7 +16,7 @@ warnings.filterwarnings('ignore')
 def extract_esc10_feat():
     # 5-fold cross validation settings
     cv_index = np.load('cvindex.npz')
-    TR = cv_index['TR']  # training fold
+    TR = cv_index['TR']  # train fold
     TE = cv_index['TE']  # test fold
 
     # 5 fold extracting
