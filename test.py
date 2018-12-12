@@ -42,12 +42,12 @@ def CNN_test(test_fold, feat):
 
 
 if __name__ == '__main__':
-    use_gpu()
+    use_gpu()  # 使用GPU
     dict_acc = {}
     print('### [Start] Test model for ESC10 dataset #####')
     for fold in [1, 2, 3, 4, 5]:
         print("## Start test fold{} model #####".format(fold))
-        acc = CNN_test(fold, 'logmel')
+        acc = CNN_test(fold, 'mfcc')
         dict_acc['fold{}'.format(fold)] = acc
         print("## Finish test fold{} model #####".format(fold))
     dict_acc['mean'] = np.mean(list(dict_acc.values()))
