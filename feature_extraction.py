@@ -11,7 +11,7 @@ import random
 
 def extract_logmel(y, sr, size=3):
     """
-    extract log mel spectrogram
+    extract log mel spectrogram feature
     :param y: the input signal (audio time series)
     :param sr: sample rate of 'y'
     :param size: the length (seconds) of random crop from original audio, default as 3 seconds
