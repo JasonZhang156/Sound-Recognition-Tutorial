@@ -14,3 +14,5 @@ A simple sound recognition tutorial, including data analysis, feature extraction
 - **[5.训练模型。](https://blog.csdn.net/zzc15806/article/details/84975539)** 采用5-fold cross validation的方法训练模型。
 
 - **[6.测试模型。](https://blog.csdn.net/zzc15806/article/details/84975709)** 导入预训练模型并测试。
+
+### 持续更新...
