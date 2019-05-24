@@ -15,4 +15,6 @@ A simple sound recognition tutorial, including data analysis, feature extraction
 
 - **[6.测试模型。](https://blog.csdn.net/zzc15806/article/details/84975709)** 导入预训练模型并测试。
 
+- **[7.声音数据增强。](https://blog.csdn.net/zzc15806/article/details/90510292)** 使用librosa实现Time Stretch 和 Pitch Shift进行数据增强。
+
 ### 持续更新...
